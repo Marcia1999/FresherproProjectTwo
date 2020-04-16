@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+	<title>Billing page</title>
+</head>
+
+<body>
+
+	<div class="container">
+	
+		<h3>Cart page</h3>
+		<hr>
+		
+		<p class="h4 mb-4">Search Product Results</p>
+		<form action="#" th:object="${product}" method="GET">
+		
+			<table class="table table-bordered table-striped">
+		<thead class="thead-dark">
+			<tr>
+				<th>Product_Code</th>
+				<th>Product_Name</th>
+				<th>Product_Price</th>
+				<th>Product_Gst</th>
+				<th> </th>
+			</tr>
+		</thead>
+		
+		<tbody>
+			<tr th:each="tempProduct : ${product}">
+			
+				<td th:text="${tempProduct.code}" />	
+				<td th:text="${tempProduct.name}" />	
+				<td th:text="${tempProduct.price}" />
+				<td th:text="${tempProduct.gst}" />	
+			</tr>
+			</tbody>
+			</table>
+						
+		</form>
+	
+		<hr>
+		<a th:href="@{/products/showFormForBilling}">Back to Product Search Page</a>
+		
+	</div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
