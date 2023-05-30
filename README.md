@@ -3,9 +3,6 @@ In this project, an Online Shopping Cart is designed using Java, MySQL, Spring b
 # Output Images: 
 Output in Product Entry Page:
 ![image](https://github.com/Marcia1999/FresherproProjectTwo/assets/63154325/44cf3e73-403a-4f47-b2ba-60b6bdcfa1a0)
-Output in MySQL Database:
-![image](https://github.com/Marcia1999/FresherproProjectTwo/assets/63154325/be27376e-75bb-455c-8693-ffae3303ec1f)
-
 Output in Billing Page:
 ![image](https://github.com/Marcia1999/FresherproProjectTwo/assets/63154325/4eeb7e9c-5bac-4876-9136-684c9adbd140)
 
